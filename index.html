@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artisanat & Élégance Kabyle</title>
+    <title>Kabyle Shop - Artisanat & Tradition</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,31 +16,64 @@
     <main>
         <!-- Produit 1 : Robe Kabyle Nadjma -->
         <div class="produit">
-            <img src="https://www.orientaletendance.com/11209-large_default/robe-kabyle-nadjma.jpg" alt="Robe Kabyle Nadjma">
+            <div class="image-container">
+                <img src="https://www.orientaletendance.com/11209-large_default/robe-kabyle-nadjma.jpg" alt="Robe Kabyle Nadjma">
+                <span class="badge">Bientôt disponible</span>
+            </div>
             <h2>Robe Kabyle Nadjma</h2>
             <p class="description">Robe traditionnelle faite main avec galons et motifs authentiques.</p>
             <p class="prix">19,99 €</p>
-            <a href="mailto:tamazightaoudia29@gmail.com?subject=Commande%20:%20Robe%20Kabyle%20Nadjma&body=Bonjour,%20je%20souhaite%20commander%20la%20Robe%20Kabyle%20Nadjma%20au%20prix%20de%2019,99%20%E2%82%AC.%20Merci%20de%20me%20recontacter." class="btn-commander">Commander par e-mail</a>
+            <a href="#formulaire-reservation" class="btn-reserver">Réserver / M'informer</a>
         </div>
 
         <!-- Produit 2 : Bracelet Argent Émaillé -->
         <div class="produit">
-            <img src="https://www.proantic.com/galerie/antiquites-chanel/img/241102-1.jpg" alt="Bracelet Berbère Argent Émaillé">
+            <div class="image-container">
+                <img src="https://www.proantic.com/galerie/antiquites-chanel/img/241102-1.jpg" alt="Bracelet Berbère Argent Émaillé">
+                <span class="badge">Bientôt disponible</span>
+            </div>
             <h2>Bracelet Argent Émaillé</h2>
             <p class="description">Bracelet traditionnel style Beni Yenni émaillé à la main.</p>
             <p class="prix">44,99 €</p>
-            <a href="mailto:tamazightaoudia29@gmail.com?subject=Commande%20:%20Bracelet%20Argent%20%C3%89maill%C3%A9&body=Bonjour,%20je%20souhaite%20commander%20le%20Bracelet%20Argent%20%C3%89maill%C3%A9%20au%20prix%20de%2044,99%20%E2%82%AC.%20Merci%20de%20me%20recontacter." class="btn-commander">Commander par e-mail</a>
+            <a href="#formulaire-reservation" class="btn-reserver">Réserver / M'informer</a>
         </div>
 
         <!-- Produit 3 : Fibule Berbère -->
         <div class="produit">
-            <img src="https://www.proantic.com/galerie/farella-franck/img/320832-1.jpg" alt="Fibule Berbère Ancienne">
+            <div class="image-container">
+                <img src="https://www.proantic.com/galerie/farella-franck/img/320832-1.jpg" alt="Fibule Berbère Ancienne">
+                <span class="badge">Bientôt disponible</span>
+            </div>
             <h2>Fibule Berbère (Tabzimt)</h2>
             <p class="description">Broche traditionnelle emblématique en argent travaillé.</p>
             <p class="prix">39,99 €</p>
-            <a href="mailto:tamazightaoudia29@gmail.com?subject=Commande%20:%20Fibule%20Berb%C3%A8re%20(Tabzimt)&body=Bonjour,%20je%20souhaite%20commander%20la%20Fibule%20Berb%C3%A8re%20(Tabzimt)%20au%20prix%20de%2039,99%20%E2%82%AC.%20Merci%20de%20me%20recontacter." class="btn-commander">Commander par e-mail</a>
+            <a href="#formulaire-reservation" class="btn-reserver">Réserver / M'informer</a>
         </div>
     </main>
+
+    <!-- Formulaire de réservation & liste d'attente -->
+    <section id="formulaire-reservation" class="section-formulaire">
+        <h2>Réserver un article ou être informé de l'arrivée du stock</h2>
+        <p class="form-intro">Laissez-nous vos coordonnées, aucun paiement n'est requis. Nous vous contacterons en priorité dès l'arrivée de nos pièces !</p>
+        
+        <!-- Pense à remplacer 'xxxxxxxx' par ton identifiant Formspree une fois créé -->
+        <form action="https://formspree.io/f/xxxxxxxx" method="POST">
+            <label for="article">Article qui vous intéresse :</label>
+            <select name="article" id="article" required>
+                <option value="Robe Kabyle Nadjma (19,99 €)">Robe Kabyle Nadjma — 19,99 €</option>
+                <option value="Bracelet Argent Émaillé (44,99 €)">Bracelet Argent Émaillé — 44,99 €</option>
+                <option value="Fibule Berbère (39,99 €)">Fibule Berbère (Tabzimt) — 39,99 €</option>
+            </select>
+
+            <label for="nom">Nom complet :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom" required>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+
+            <button type="submit" class="btn-envoyer">M'inscrire sur la liste d'attente</button>
+        </form>
+    </section>
 
 </body>
 </html>
