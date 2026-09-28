@@ -1,43 +1,54 @@
+/* Style général */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #faf8f5;
+    background-color: #fcfbf7;
+    color: #2c2c2c;
     margin: 0;
-    padding: 20px;
-    color: #333;
+    padding: 0;
 }
 
+/* En-tête */
 header {
+    background-color: #8b263e; /* Tons bordeaux traditionnels */
+    color: white;
     text-align: center;
-    margin-bottom: 40px;
+    padding: 2.5rem 1rem;
 }
 
 header h1 {
-    color: #8b263e; /* Rouge amarante / traditionnel */
-    font-size: 2.2em;
-    margin-bottom: 5px;
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
 }
 
 .sous-titre {
-    color: #666;
     font-style: italic;
-    font-size: 1.1em;
+    opacity: 0.9;
+    margin-top: 0.5rem;
 }
 
+/* Grille des produits */
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Carte produit */
 .produit {
-    background-color: #ffffff;
-    border: 1px solid #e8e2d9;
+    background: white;
     border-radius: 12px;
-    padding: 20px;
-    width: 240px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 300px;
+    padding: 1.5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.2s ease;
 }
 
@@ -46,44 +57,43 @@ main {
 }
 
 .produit img {
-    border-radius: 8px;
     width: 100%;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .produit h2 {
-    font-size: 1.2em;
-    color: #2c2c2c;
-    margin: 15px 0 8px 0;
+    font-size: 1.3rem;
+    color: #1b4332; /* Touche vert sobre */
+    margin: 1rem 0 0.5rem 0;
 }
 
 .description {
-    font-size: 0.9em;
-    color: #777;
-    height: 40px;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #666;
+    flex-grow: 1;
 }
 
 .prix {
-    font-size: 1.3em;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #8b263e;
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 
-button {
-    background-color: #2d6a4f; /* Vert sobre */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 0.95em;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 100%;
-    font-weight: bold;
-}
-
-button:hover {
+/* Boutons Commander */
+.btn-commander {
+    display: inline-block;
     background-color: #1b4332;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-commander:hover {
+    background-color: #2d6a4f;
 }
